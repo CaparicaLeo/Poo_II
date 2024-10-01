@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ex.PersonagemController">
+    <top>
+        <HBox fx:id="panePersonagem" prefHeight="54.0" prefWidth="344.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="lblPersonagem" alignment="BOTTOM_RIGHT" text="Nome do Personagem:" />
+                <TextField fx:id="txtPersonagem" onAction="#initialize" prefHeight="25.0" prefWidth="210.0" promptText="Digite o nome do personagem aqui" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <HBox prefHeight="39.0" prefWidth="344.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="lblAtor" prefHeight="17.0" prefWidth="122.0" text="Nome do ator:">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="txtAtor" onAction="#initialize" prefHeight="25.0" prefWidth="207.0" promptText="Digite o nome do ator aqui" />
+            </children>
+        </HBox>
+    </center>
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="lbl1" text="O personagem de ">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="lbl2">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="lbl3" text=" ser� interpretado por ">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="lbl4" />
+            </children>
+        </HBox>
+    </bottom>
+    <padding>
+        <Insets left="10.0" right="10.0" top="10.0" />
+    </padding>
+</BorderPane>
