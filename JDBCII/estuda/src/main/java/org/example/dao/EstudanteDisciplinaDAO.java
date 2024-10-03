@@ -8,8 +8,8 @@ import java.util.List;
 
 public interface EstudanteDisciplinaDAO {
     public void insere(EstudanteDisciplina estudanteDisciplina) throws SQLException;
-    public void atualiza(EstudanteDisciplina estudanteDisciplina) throws SQLException;
-    public void remove(EstudanteDisciplina estudanteDisciplina) throws SQLException;
-    public EstudanteDisciplina buscaPorCodigo(int estudanteDisciplina_estudanteID) throws SQLException;
+    //public void atualiza(EstudanteDisciplina estudanteDisciplina) throws SQLException;
+    //public void remove(EstudanteDisciplina estudanteDisciplina) throws SQLException;
+    //public EstudanteDisciplina buscaPorCodigo(int estudanteDisciplina_estudanteID) throws SQLException;
     public List<EstudanteDisciplina> listTodos() throws SQLException;
 }

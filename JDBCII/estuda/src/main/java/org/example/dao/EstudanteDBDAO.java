@@ -63,8 +63,8 @@ public class EstudanteDBDAO implements EstudanteDAO, IConst {
         open();
         sql = "SELECT * FROM estudante WHERE estudante_id = ?";
         statement = connection.prepareStatement(sql);
-        result = statement.executeQuery();
         statement.setInt(1,EstudanteID);
+        result = statement.executeQuery();
         if(result.next()){
             Estudante estudante = new Estudante();
             estudante.setEstudanteId(result.getInt("estudante_id"));
@@ -82,6 +82,7 @@ public class EstudanteDBDAO implements EstudanteDAO, IConst {
 
     @Override
     public List<Estudante> listTodos() throws SQLException {
+        open();
         sql = "SELECT * FROM estudante;";
         statement = connection.prepareStatement(sql);
         result = statement.executeQuery();

@@ -81,7 +81,7 @@ public class Main {
         System.out.println(disciplinaDAO.listTodos());
 
         System.out.println("Insere a disciplina Ingl�s:");
-        Disciplina disciplina03 = new Disciplina("Ingl�s",2);
+        Disciplina disciplina03 = new Disciplina("Ingl�s",3);
         disciplinaDAO.insere(disciplina03);
 
         System.out.println("Lista as disciplinas no banco:");
